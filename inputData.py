@@ -18,8 +18,8 @@ def inputData():
         if not (1 <= numberPoints <= 6000):
             messagebox.showerror("Error", "Invalid input for number of points. Please enter an integer between 1 and 6000.")
             return
-        if not (1.00 <= noisePercentage <= 50.00):
-            messagebox.showerror("Error", "Invalid input for percentage of noise. Please enter a float between 1.00 and 50.00.")
+        if not (1.00 <= noisePercentage <= 10.00):
+            messagebox.showerror("Error", "Invalid input for percentage of noise. Please enter a float between 1.00 and 10.00.")
             return
 
         # close the window
@@ -40,7 +40,7 @@ def inputData():
     pointsInput = Entry(root)
     pointsInput.grid(row=1, column=1, padx=10, pady=10)
 
-    noiseLabel = Label(root, text="Enter the percentage of noise (1-50):")
+    noiseLabel = Label(root, text="Enter the percentage of noise (1-10):")
     noiseLabel.grid(row=2, column=0, padx=10, pady=10)
     noiseInput = Entry(root)
     noiseInput.grid(row=2, column=1, padx=10, pady=10)
