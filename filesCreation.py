@@ -1,5 +1,5 @@
 from datetime import datetime
-# seving the csv files and the plot images
+# saving the csv files and the plot images
 def filesCreation():
     counter = 1
     csv =  "csvFiles/generation" + datetime.now().strftime("%Y-%m-%d_%H-%M-%S") + ".csv"

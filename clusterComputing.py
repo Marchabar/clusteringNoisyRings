@@ -1,11 +1,5 @@
-import random
-import matplotlib.pyplot as plt 
 import numpy as np
 import scipy.spatial.distance as sc
-
-from dataGenerator import dataGenerator
-from inputData import inputData
-
 
 # Function for recognizing the centers of the circles plotted in dataGenerator.py
 def recognizingCircles(allPoints, numberCirc,m = 1.1, maxIter=300, error=1e-5):
