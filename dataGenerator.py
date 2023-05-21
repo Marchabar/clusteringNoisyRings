@@ -65,7 +65,7 @@ def dataGenerator(numberCirc, numberPoints, noisePercentage, csv):
         allPoints.append([xCoords[i], yCoords[i]])
         
     
-    
+    # saving the data in a csv file in the csvFiles folder
     res = np.asarray(allPoints)
     np.savetxt(csv, res, delimiter=",")
     

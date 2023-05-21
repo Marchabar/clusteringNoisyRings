@@ -12,7 +12,7 @@ def addRowToTable(filename, numCircumferences, numPoints, noisePercentage, total
     with open(filename, 'a', newline='') as csvfile:
         writer = csv.writer(csvfile)
         
-        # Skip writing the row if the file exists and it has a non-zero size
+        # Skip writing the row if the file exists and it has a non-zero size (first line)
         if file_exists and csvfile.tell() == 0:
             return
         

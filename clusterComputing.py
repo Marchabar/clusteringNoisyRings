@@ -42,7 +42,7 @@ def recognizingCircles(allPoints, numberCirc,m = 1.1, maxIter=300, error=1e-5):
         # normalizing the new membership matrix so each row sums 1
         membershipsNew = membershipsNew / np.sum(membershipsNew, axis=1, keepdims=True)
 
-        # check for convergence
+        # check for convergence calculating the euclidean differences between the new and the old membership matrix
         if np.linalg.norm(membershipsNew - memberships) < error:
             break
 

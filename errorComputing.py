@@ -8,9 +8,11 @@ def errorComputing(centroids, realCenters):
     minError = float('inf')
     maxError = float('-inf')
     
-    for i, centroid in enumerate(centroids):        
+    for i, centroid in enumerate(centroids):
+        # compute the distance of the centroid to each of the real centers        
         distances = [np.linalg.norm(centroid - np.array(realCenter)) for realCenter in realCenters]
-        distanceToRealCenter = min(distances) # distance of the centroid to the closest real center
+        # distance of the centroid to the closest real center
+        distanceToRealCenter = min(distances) 
         totalError += distanceToRealCenter
         minError = min(minError, distanceToRealCenter)
         maxError = max(maxError, distanceToRealCenter)

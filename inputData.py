@@ -24,7 +24,7 @@ def inputData():
         # close the window
         root.destroy()
 
-
+    #tkinter implementation to get the input from the user and to design the window
     root = Tk()
     root.title("Circle Recognition")
     root.geometry("400x200")

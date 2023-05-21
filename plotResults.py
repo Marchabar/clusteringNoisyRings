@@ -17,8 +17,9 @@ def plotResults(totalError, minError, maxError, centroids, csv, numberCircle, no
     axs[0].set_title("Nº Circumferences: " + str(numberCircle) + "| Nº Points: " + str(numberPoints) + "| Noise: " + str(noisePercentage) + "%")
     axs[0].set_xlim([0, 100])
     axs[0].set_ylim([0, 100])
-    axs[0].set_aspect('equal')  # Set equal aspect ratio for x and y axes
+    # Set equal aspect ratio for x and y axes
 
+    axs[0].set_aspect('equal')  
 
     # plot the errors in the second subplot
     errors = [totalError, minError, maxError]
