@@ -4,6 +4,8 @@ This assignment is inspired by a real subproblem from the LHCb experiment conduc
 
 The objective of this algorithm is to search for circumferences in pre-generated circumferences. Furthermore, it should explicitly account for uncertainty in its calculations.
 
+![Experiment](plotFigures\plot2023-05-20_13-15-47.png)
+
 ## Getting Started
 
 To start with it, follow these steps:
